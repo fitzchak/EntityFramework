@@ -248,6 +248,7 @@ namespace Microsoft.EntityFrameworkCore.Storage.Internal
                 DiagnosticSource.WriteCommandAfter(
                     dbCommand,
                     executeMethod,
+                    result,
                     instanceId,
                     startTimestamp,
                     currentTimestamp);
@@ -261,6 +262,7 @@ namespace Microsoft.EntityFrameworkCore.Storage.Internal
                 DiagnosticSource.WriteCommandError(
                     dbCommand,
                     executeMethod,
+                    result,
                     instanceId,
                     startTimestamp,
                     currentTimestamp,
